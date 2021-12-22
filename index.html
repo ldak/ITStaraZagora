@@ -22,12 +22,26 @@
                 }
             }
         }
+        const script=()=>{
+            setTimeout(()=>{
+                const start=document.getElementById('start');
+                const main =document.getElementById('main');
+                start.classList.add('hidden')
+                main.classList.remove('hidden')
+            },1500)
+
+        }
+        
     </script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
-    <div class="flex flex-col w-full min-h-screen bg-container gap-2">
+<body onload="script();">
+    <div id="start" class="bg-line w-full z-50 flex-col gap-1 flex justify-center items-center h-screen absolute">
+        <img class="m-4 bounce-in-top w-24 h-24" src="/images/logo.png" alt="">
+    </div>
+    <div id="main" class="hidden flex flex-col w-full min-h-screen bg-container gap-2">
 <!--        //menu-->
-        <div class="sticky top-0 w-full flex bg-container z-50 flex-col">
+        <div class="sticky top-0 w-full flex bg-container z-40 flex-col">
             <div class="flex w-full py-5 px-24 gap-12 items-end">
                 <div class="flex-grow relative h-full">
                     <img class="absolute -top-10 left-0 h-20 w-20" alt="" src="/images/logo.png">
@@ -45,14 +59,14 @@
                 <div class="absolute w-full h-full pb-72">
                     <img class="w-full h-full" src="/images/bg.png" alt="">
                 </div>
-                <div class="flex z-10 p-12 justify-between gap-32 items-start">
-                    <img class="w-5/12" src="/images/home.png" alt="">
-                    <div class="flex flex-col gap-6 items-end justify-start">
+                <div class="flex z-10 p-12 justify-between gap-12 items-center">
+                    <img class="w-6/12" src="/images/home.png" alt="">
+                    <div class="flex flex-col gap-6 items-end justify-start w-full">
                         <div class="text-menu_text font-bold text-right text-4xl">Добре дошли в Стара Загора!</div>
-                        <div class="text-lg text-black text-right font-bold">Стара Загора е град с богата културно-историческа, както и природна база.
-                            Чрез посещение на града може да намерите множество интересни забележителности от всякакъв вид.
-                            Има за всеки по нещо!
-                        </div>
+                        <div class="text-lg text-black text-right font-bold">Стара Загора е град с богата културно-историческа, както и природна база.</div>
+                        <div class="text-lg text-black text-right font-bold">Чрез посещение на града може да намерите множество интересни забележителности от всякакъв вид.</div>
+                        <div class="text-lg text-black text-right font-bold">Има за всеки по нещо!</div>
+
                     </div>
                 </div>
                 <div class="grid grid-cols-3 gap-32 z-10">
@@ -72,14 +86,19 @@
                 <div class="flex gap-24 z-10 w-full p-12">
                     <div class="flex flex-col gap-6 items-start justify-start w-full">
                         <div class="text-menu_text font-bold text-4xl">Започваме с църквата “Свети Николай Чудотворец”</div>
-                        <div class="text-lg text-black font-bold">„Свети Николай Чудотворец“ е православен храм в центъра на Стара Загора, България, под ведомството на Старозагорската епархия.
-
+                        <div class="text-lg text-black font-bold">
+                            „Свети Николай Чудотворец“ е православен храм в центъра на Стара Загора, България, под ведомството на Старозагорската епархия.
+                        </div>
+                        <div class="text-lg text-black font-bold">
                             Към храма в олтара има параклис на свети княз Борис I. Храмовият празник е на 6 декември. До храма има градинка с шадраван със статуя на два пингвина, която е изцяло реновирана през 2013 г. Мястото е една от основните забележителности на Стара Загора.
-
+                        </div>
+                        <div class="text-lg text-black font-bold">
                             На мястото на храма е имало църква „Свети Никола“, която е била разрушена по време на Старозагорското клане. На 1 март 1841*г.
-
+                        </div>
+                        <div class="text-lg text-black font-bold">
                             Към църквата е открито първото светско училище в Стара Загора.
-
+                        </div>
+                        <div class="text-lg text-black font-bold">
                             През 1896 г. започва строителството на новия храм, което е завършено през 1909 г. През 2014 г. е напълно възстановена оградата на храма.
                         </div>
                     </div>
@@ -102,12 +121,18 @@
                     <div class="flex flex-col gap-6 items-start justify-start w-full">
                         <div class="text-menu_text font-bold text-4xl">Парк "Аязмото”</div>
                         <div class="text-lg text-black font-bold">Парк „Митрополит Методий Кусев“ (по-често наричан Аязмото) е парк в Стара Загора.
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            Оригинално паркът е именуван на старозагорският Митрополит Методи Кусев, който е започнал изграждането му, засявайки първите дървета и самостоятелно грижейки се за тях. Старият митрополитски дом също се намира в парка.
+                        Оригинално паркът е именуван на старозагорският Митрополит Методи Кусев, който е започнал изграждането му, засявайки първите дървета и самостоятелно грижейки се за тях. Старият митрополитски дом също се намира в парка.
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            По време на социализма официално е преименуван на Парк „Ленин“, но жителите на града продължават да го наричат Аязмото.
+                        По време на социализма официално е преименуван на Парк „Ленин“, но жителите на града продължават да го наричат Аязмото.
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            Разполага се на площ от 3500 дка, северно от града, разполага с уникални за България дървесни видове,
+                        Разполага се на площ от 3500 дка, северно от града, разполага с уникални за България дървесни видове,
                             а oт 2020 е бил и допълнително ремонтиран.
                         </div>
                     </div>
@@ -121,13 +146,20 @@
                     <div class="flex flex-col gap-6 items-start justify-start w-full">
                         <div class="text-menu_text font-bold text-4xl">Самарското знаме</div>
                         <div class="text-lg text-black font-bold">Самарското знаме, още познато като мемориален комплекс „Бранителите на Стара Загора“ е паметник в Стара Загора.
-                            Той е включен в списъка на
+                        </div>
+                        <div class="text-lg text-black font-bold">
+
+                        Той е включен в списъка на
                             Стоте национални туристически обекта в България.
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            Открито е на 30 юли 1977 година по случай 100-годишнината от боевете при Стара Загора и Шипка, при които българските опълченци от 1,2,3, 4, 5 и 6-а дружина под командването на руски офицери заедно с руска кавалерия
+                        Открито е на 30 юли 1977 година по случай 100-годишнината от боевете при Стара Загора и Шипка, при които българските опълченци от 1,2,3, 4, 5 и 6-а дружина под командването на руски офицери заедно с руска кавалерия
                             и артилерия влизат в бой с армията на Сюлейман паша на 31 юли 1877 г!
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            Забавен факт:
+                        Забавен факт:
                             Има точно 100 стъпала заради 100годишнината.
                         </div>
                     </div>
@@ -150,18 +182,28 @@
                     <div class="flex flex-col gap-6 items-start justify-start w-full">
                         <div class="text-menu_text font-bold text-4xl">Парк Бедечка</div>
                         <div class="text-lg text-black font-bold">Бедечка е един от най-големите паркове в Стара Загора с площ над 1000 декара!
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            Създаден е през 1958 г.
+                        Създаден е през 1958 г.
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            През парка протича река Бедечка(ляв приток на река Сазлийка).
+                        През парка протича река Бедечка(ляв приток на река Сазлийка).
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            В парка се намират 500-годишен чинар (Platanus orientalis) с
+                        В парка се намират 500-годишен чинар (Platanus orientalis) с
                             диаметър 3,5 m и височина 17 m. както и изкуственото езеро „Загорка“, което е в непосредствена близост до пивоварна „Загорка“(най-голямата
                             в областта).
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            В парка са паспортизирани над 2700 дървета и бройката расте!
+                        В парка са паспортизирани над 2700 дървета и бройката расте!
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            Но днес този парк е в опасност от унищожаване,
+                        Но днес този парк е в опасност от унищожаване,
                         </div>
                     </div>
                 </div>
@@ -173,17 +215,23 @@
                 <div class="flex gap-24 z-10 w-full p-12">
                     <div class="flex flex-col gap-6 items-start justify-start w-full">
                         <div class="text-menu_text font-bold text-4xl">Операта </div>
-                        <div class="text-lg text-black font-bold">Старозагорската опера, официално Държавна опера Стара Загора, е първата опера в България извън столицата
-                            .
-                            Оперното изкуство в Стара Загора води началото си от 27 февруари 1925 г., когато в града е поставена операта „Гергана“.
-                            Появяването на извънстолична опера само няколко години след откриването на оперния театър в София е истинско културно събитие в страната!
+                        <div class="text-lg text-black font-bold">Старозагорската опера, официално Държавна опера Стара Загора, е първата опера в България извън столицата.
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            През 1991 г. пожар унищожава сградата на операта. Изпепелени са безценни декори и сценични костюми, а кристалните полилеи, внесени специално от Италия, са унищожени.
+                        Оперното изкуство в Стара Загора води началото си от 27 февруари 1925 г., когато в града е поставена операта „Гергана“.
+                            Появяването на извънстолична опера само няколко години след откриването на оперния театър в София е истинско културно събитие в страната!
+                        </div>
+                        <div class="text-lg text-black font-bold">
+
+                        През 1991 г. пожар унищожава сградата на операта. Изпепелени са безценни декори и сценични костюми, а кристалните полилеи, внесени специално от Италия, са унищожени.
                             След дълги години на събиране на средства за възстановяване на сградата, включително чрез дарения от родолюбиви граждани и главно
                             с финансова помощ от Община
                             Стара Загора, най-после ремонтът приключва.
+                        </div>
+                        <div class="text-lg text-black font-bold">
 
-                            На 5 октомври 2010 г. (празника на Стара Загора), с премиера на операта „Кармен“ от Жорж Бизе
+                        На 5 октомври 2010 г. (празника на Стара Загора), с премиера на операта „Кармен“ от Жорж Бизе
                             отново отваря врати най-красивата оперна сграда в България.
 
                         </div>
@@ -199,9 +247,9 @@
             <div class="mt-24 text-menu_text text-5xl font-bold">Виртуална разходка из дестинацията</div>
             
             <div class="bg-wtf w-full p-12 mt-24 grid grid-cols-3 ">
-                <div class="text-container underline font-bold text-5xl text-left items-end place-self-end justify-self-start">Допълнителни кадри</div>
-                <video class="bg-gray-300 h-96 w-60 justify-self-center" width="240" height="320" src="images/video.mov" controls></video>
-                <div class="text-container underline font-bold text-5xl text-right place-self-end">Допълнителна информация</div>
+                <div class="text-container underline font-bold text-3xl text-left items-end self-center justify-self-start">Допълнителни кадри</div>
+                <video class=" justify-self-center" width="240" height="320" src="images/video.mp4" controls></video>
+                <div class="text-container underline font-bold text-3xl text-right justify-end self-center">Допълнителна информация</div>
 
             </div>
 
@@ -210,8 +258,8 @@
                 <div class="w-full">
                     <img class="w-full h-96" src="images/map.png" alt="">
                 </div>
-                <div class="flex flex-col gap-6 items-end justify-end w-full text-lg font-bold text-text_contacti">
-                    <div class="text-menu_text font-bold text-4xl text-right w-full">Свържете се с нас на: </div>
+                <div class="flex flex-col gap-6 items-center justify-center w-full text-lg font-bold text-text_contacti">
+                    <div class="text-menu_text font-bold text-4xl text-right ">Свържете се с нас на: </div>
                     <div class="flex flex-col gap-2 pl-4">
                         <div class="flex gap-1  w-full">
                             <div>Email:</div>
