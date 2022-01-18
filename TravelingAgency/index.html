@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Zara Travel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    dropShadow:{
+                        'custom':'0px 18px 49px rgba(0, 0, 0, 0.11)',
+                    },
+                    colors:{
+                        'main':'#1ebbd7',
+                    }
+                },
+            },
+        }
+    </script>
 </head>
 <body>
-$END$
+<div class="relative flex flex-col">
+<!--    //header-->
+    <div class="bg-main w-full sticky top-0 py-8 px-32 flex items-center justify-between filter drop-shadow-custom z-10">
+        <div class="flex items-center gap-4">
+            <img class="w-12 h-12" src="/images/logo.svg" alt="">
+            <div class="text-white font-bold text-xl">Zara Travel</div>
+        </div>
+        <div class="flex justify-between gap-4 text-white font-bold">
+            <div class="underline">Самолетни почивки</div>
+            <div class="underline">Хотели</div>
+            <div class="underline">Чатърни полети</div>
+        </div>
+    </div>
+<!--    //main-->
+    <div class="relative flex-grow flex flex-col">
+        <img class="" src="images/beach.png" alt="">
+        <div class="absolute top-0 w-full h-full flex flex-col px-12 py-10">
+            <div class="text-main w-full text-center mb-20 font-bold text-6xl">Zara Travel</div>
+            <div class="grid grid-cols-3 gap-8 text-white">
+                <div class="flex flex-col bg-main p-4">
+                    <img src="/images/beach2.png" alt="">
+                    <div class="mt-2 font-bold">Кристал Какун</div>
+                    <div class="text-white">⭐⭐⭐⭐⭐</div>
+                    <div class="mt-2 text-md">В Мексико,за 2ма, 7 нощувки, all inclusive </div>
+                    <div class="font-bold w-full text-right text-2xl">$1,532</div>
+                </div>
+                <div class="flex flex-col bg-main p-4">
+                    <img src="/images/beach2.png" alt="">
+                    <div class="mt-2 font-bold">Лагуна Матата</div>
+                    <div class="text-white">⭐⭐⭐⭐⭐</div>
+                    <div class="mt-2 text-md">В Мексико,за 2ма, 7 нощувки, all inclusive </div>
+                    <div class="font-bold w-full text-right text-2xl">$15,432</div>
+                </div>
+                <div class="flex flex-col bg-main p-4">
+                    <img src="/images/beach2.png" alt="">
+                    <div class="mt-2 font-bold">Рико Де Хефо</div>
+                    <div class="text-white">⭐⭐⭐⭐⭐</div>
+                    <div class="mt-2 text-md">В Мексико,за 2ма, 7 нощувки, all inclusive </div>
+                    <div class="font-bold w-full text-right text-2xl">$3,467</div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+<!--    //footer-->
+    <div class="bg-main px-40 py-4 grid grid-cols-6 text-white">
+        <div class="flex flex-col">
+            <div class="">Телефон: </div>
+            <div class="">Email: </div>
+        </div>
+        <div class="flex flex-col">
+            <div class="">089 432 1532</div>
+            <div class="">info@zara.bg</div>
+        </div>
+        <div class="flex flex-col">
+            <div class="">089 432 1534</div>
+            <div class="">zara@agency.bg</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
