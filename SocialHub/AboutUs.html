@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AboutUs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    dropShadow:{
+                        'custom':'0px 18px 49px rgba(0, 0, 0, 0.11)',
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+<div class="flex flex-col w-full gap-10 relative">
+    <!--        //header-->
+    <div class="w-full bg-blue-800 flex items-center justify-between px-16 py-4 drop-shadow-lg sticky top-0">
+        <img class="h-14 w-14" src="/images/logo.svg" alt="">
+
+        <div class="flex ">
+            <button onclick="window.location.href='index.html'" class="border rounded-l-md  text-white py-2.5 px-5">Начало</button>
+            <button onclick="window.location.href='AboutUs.html'" class="border bg-yellow-400 text-white py-2.5 px-5">За нас</button>
+            <button onclick="window.location.href='Partners.html'" class="border text-white py-2.5 px-5">Партньори</button>
+            <button onclick="window.location.href='Contacts.html'" class="border rounded-r-md text-white py-2.5 px-5">Контакти</button>
+        </div>
+        <input class="border border-gray-500 text-gray-500 py-2.5 px-5 rounded-md" type="text" placeholder="Търси">
+    </div>
+    <!--        //Main-->
+    <div class="px-40 flex flex-col gap-12">
+        <!--            //first-->
+        <div class="flex gap-4">
+            <div class="flex flex-col border border-blue-800 font-bold text-blue-900 w-64">
+                <img src="/images/Picture_18.jpg" alt="">
+                <div class="text-center py-4 w-full">Връзка с производителите</div>
+            </div>
+            <div class="flex flex-col border border-blue-800 font-bold text-blue-900 w-64">
+                <img src="/images/Picture_32.jpg" alt="">
+                <div class="text-center py-4 w-full">Връзка с студентите</div>
+            </div>
+            <div class="flex flex-col border border-blue-800 font-bold text-blue-900 w-64">
+                <img src="/images/Picture_36.jpg" alt="">
+                <div class="text-center py-4 w-full">Връзка с доброволците</div>
+            </div>
+            <div class="flex flex-col border border-blue-800 font-bold text-blue-900 w-64">
+                <img src="/images/Picture_24.jpg" alt="">
+                <div class="text-center py-4 w-full">Логистика</div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4">
+            <div class="font-bold text-2xl">ЗА НАС</div>
+            <div>
+                Чрез Социален хъб физически лица, организации и независими местни занаятчии ще могат лесно и бързо да продават продуктите си в региона и извън него. Ако производителите имат собствен он-лайн магазин или фейсбук страница, чрез платформата на Социален хъб ще имат възможност да достигнат до много повече потенциални клиенти. Ако нямате онлайн присъствие, ние ще Ви помогнем - група от студенти и ученици с високотехнологични умения ще изградят вашия уебсайт, магазин или страница в социалните мрежи.
+                Генерираната от нас печалба ще се използва за финансиране на социална кухня за подпомагане на възрастни хора в неравностойно положение, за разнос на храна по домовете и други социални услуги.
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    dropShadow:{
+                        'custom':'0px 18px 49px rgba(0, 0, 0, 0.11)',
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body>
+<div class="flex flex-col w-full gap-10 relative">
+    <!--        //header-->
+    <div class="w-full bg-blue-800 flex items-center justify-between px-16 py-4 drop-shadow-lg sticky top-0">
+        <img class="h-14 w-14" src="/images/logo.svg" alt="">
+
+        <div class="flex ">
+            <button onclick="window.location.href='index.html'" class="border rounded-l-md  text-white py-2.5 px-5">Начало</button>
+            <button onclick="window.location.href='AboutUs.html'" class="border text-white py-2.5 px-5">За нас</button>
+            <button onclick="window.location.href='Partners.html'" class="border text-white py-2.5 px-5">Партньори</button>
+            <button onclick="window.location.href='Contacts.html'" class="border rounded-r-md bg-yellow-400 text-white py-2.5 px-5">Контакти</button>
+        </div>
+        <input class="border border-gray-500 text-gray-500 py-2.5 px-5 rounded-md" type="text" placeholder="Търси">
+    </div>
+    <!--        //Main-->
+    <div class="px-40 flex flex-col gap-4">
+        <!--            //first-->
+        <div class="">
+            Не се притеснявайте да се свържете с нас. Ние ще Ви запознаем с възможностите СОЦИАЛЕН ХЪБ.
+        </div>
+        <div class="">
+            Можете да зададете въпрос и като попълните онлайн формата или ни позвъните.
+        </div>
+        <form class="flex flex-col gap-4 w-full">
+            <div class="flex flex-col gap-1">
+                <div class="">Your Email</div>
+                <input placeholder="Email" class="border rounded-lg w-full px-4 py-2" type="email">
+            </div>
+            <div class="flex flex-col gap-1">
+                <div class="">Your Question</div>
+                <textarea class="border rounded-lg p-4" ccols="30" rows="10"></textarea>
+            </div>
+            <button type="submit"
+                    class="bg-blue-800 px-4 py-2 rounded-md text-white w-min">Изпрати</button>
+        </form>
+
+
+    </div>
+</div>
+</body>
+</html>
